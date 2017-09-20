@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html >
+
+<head>
+   <!--<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"/>-->
+   <script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  
+   
+   <link rel="stylesheet" href="css/style.css"/>
+   <script src="gm.dragDrop.js"></script>
+   <script src="script.js"></script>
+ 
+  
+   
+   </head>
+ 
+   
+  
+   <body   ng-app='app' ng-style= canvas id="myCanvas" width="100" height="100" style="border:20px solid gray;">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="digitalBoard.html">Home</a></li>
+      <li><a href="digitalBoard.html">Task Tracker</a></li>
+      
+    </ul>
+  </div>
+</nav><br><br><br>
+   
+  
+
+   
+   <section>
+      <div class='container ' >
+	  <h1> <center>  Task Progress Board<center></h1>
+	  
+	        
+	  
+	  <form name="frm" >
+	 <input type="text" name="newtodo" ng-model="newtodo" placeholder="New Task . . ." required> &nbsp
+	 <button type="button" class="btn btn-primary btn-md" ng-click="add($scope.newtodo)" ng-disabled="frm.$invalid"> Add new task</button>
+	 </form><br><br>
+	   
+	 
+	  <div class='panel panel-default abc1 '
+	    ng-repeat='category in categories' 
+		
+		gm-on-drop='getDropHandler(category)'> 
+		
+		<div class='panel-heading  '  >
+		   <span class='panel-title '>{{$index+1}} Stage</span>
+		  </div> 
+		   <ul class='list-group '>
+		     <div class='square'> <li class='list-group-item abc xyz' 
+			     ng-repeat='item in category.items' 
+				 gm-draggable='{category: category,item: item}'>
+				 <div >
+                   <table><tr>
+				  
+				<td>  <img src="{{item.url}}"/> </td> <td> &nbsp &nbsp &nbsp </td><td> <h2> {{item.name}}</h2> </td></span> </tr></table>
+				
+				
+			   
+			   </div>
+				 
+				 </li> </div>
+				 </ul>
+				 </div>
+				 
+				 
+				 
+					
+					
+					  
+					  
+		   </div></section>
+		   </body>
+		   
+		   </html>
+		   
+		  
+		  
+						 
+					  
+					  
+		
