@@ -1,0 +1,67 @@
+bgColor{
+  background-color:blue;
+}
+
+body{
+background-color:#ffe4b5
+}
+   
+        * {
+            font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        }
+
+        section {
+            border: 1px solid black;
+            border-radius: 1px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 10px;
+        }
+
+        .square {
+		    color:#656565;
+            display: inline-block;
+            width: 400px;
+            vertical-align: top;
+            margin: 5px;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px 0px #656565;
+			
+			
+        }
+
+        li div {
+            display: table-cell;
+            vertical-align: top;
+
+        }
+
+        
+		.abc{
+		background-color: #FFFF94;
+		}
+		.abc1{
+		background-color:	#ffffe0;
+		width: 800px;
+		}
+		.xyz1{
+		height:10px}
+		
+		input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+		
